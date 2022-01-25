@@ -1,0 +1,9 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+.header-div {
+    background-color: rgb(250, 246, 241);
+    line-height: 0.6;
+    height: px;
+    padding: 0.5em 0.2em;
+}
