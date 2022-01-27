@@ -1,19 +1,35 @@
 import React, {Component} from 'react';
-
+import Task from './Task.js'
 
 class Main extends Component {
     constructor(props){
         super(props);
+        this.state = {
+            numTasks: 0
+        }
+    }
+
+    addToDo = () => {
+        this.setState({
+            numTasks: this.state.numTasks + 1
+        });
     }
 
     render() {
-        const name = this.props.name;
+        const tasks = [<Task />];
+
+        for (var i = 0; i < this.state.numTasks; i++) {
+            tasks.push(<Task />);
+            console.log("Check");
+        }
+
+
         return(
             <div className='main'>
-                <div className='todo-item'>
-                    <input type='checkbox'></input>
-                    <p className='todo-item-name'>Item 1</p>
-                    <p className='todo-item-desc'>Something Something Something</p>
+                {tasks}
+                <div className='todo-add'>
+                    
+                    <p><a href= "#" onClick={this.addToDo}>+ Add Item</a></p>
                 </div>
                 
             </div>

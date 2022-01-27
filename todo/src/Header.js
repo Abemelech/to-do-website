@@ -18,6 +18,7 @@ class Header extends Component {
                     <img src="profile.jpg" alt='Avatar'></img>
                     <p>{name}</p>
                 </div>
+                
             </div>
         );
     }

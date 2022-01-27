@@ -48,6 +48,11 @@ body {
     padding: 1em;
     height: 90vh;
     width: 90vw;
+
+    font-size: large;
+}
+.todo-item {
+    padding-bottom: 1em;
 }
 .todo-item input{
     display: inline;
@@ -58,8 +63,27 @@ body {
     font-weight: bold;
 
 }
+.todo-item-name.checked {
+    display: inline;
+    font-weight: bolder;
+    text-decoration: line-through;
+}
 .todo-item-desc {
     margin: 0;
     margin-left: 20px;
 }
-
+.todo-item-desc.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+.todo-add {
+    font-weight: bold;
+    
+}
+.todo-add a, a:visited, a:active, a:link{
+    text-decoration: none;
+    color: black;
+}
+.todo-add a:hover {
+    color: gray;
+}
