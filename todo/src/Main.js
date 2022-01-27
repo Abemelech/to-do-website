@@ -10,8 +10,12 @@ class Main extends Component {
         const name = this.props.name;
         return(
             <div className='main'>
-                <p className='main-list'>Item 1</p>
-                <p className='main-list'>Something Something Something</p>
+                <div className='todo-item'>
+                    <input type='checkbox'></input>
+                    <p className='todo-item-name'>Item 1</p>
+                    <p className='todo-item-desc'>Something Something Something</p>
+                </div>
+                
             </div>
         );
     }

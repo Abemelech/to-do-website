@@ -9,7 +9,7 @@ class App extends React.Component {
     render() {
         return(
             <div className='container'>
-                <Header />
+                <Header name= "Abemelech"/>
                 <Nav />
                 <Main />
             </div>

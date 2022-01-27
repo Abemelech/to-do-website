@@ -9,14 +9,30 @@ body {
         "nav main main main main"
         "nav main main main main";
     align-items: stretch;
+    width: 100vw;
+    height: 100vh;
+    margin: -1em;
 }
 .header {
+    display: flex;
+    justify-content: space-between;
     grid-area: header;
     background-color: rgb(250, 248, 245);
     line-height: 0.6;
     
     padding: 0.5em 1em;
+    width: 90vw;
 }
+
+
+
+.account img {
+    border-radius: 50%;
+    width: 50px ;
+    height:50px ;
+    padding-top: 1em;
+}
+
 
 .nav {
     grid-area: nav;
@@ -33,3 +49,17 @@ body {
     height: 90vh;
     width: 90vw;
 }
+.todo-item input{
+    display: inline;
+
+}
+.todo-item-name {
+    display: inline;
+    font-weight: bold;
+
+}
+.todo-item-desc {
+    margin: 0;
+    margin-left: 20px;
+}
+
