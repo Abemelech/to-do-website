@@ -1,9 +1,35 @@
 body {
     font-family: 'Outfit', sans-serif;
+    background-color: white;
 }
-.header-div {
-    background-color: rgb(250, 246, 241);
+.container{
+    display: grid;
+    grid-template-areas: 
+        "nav header header header header"
+        "nav main main main main"
+        "nav main main main main";
+    align-items: stretch;
+}
+.header {
+    grid-area: header;
+    background-color: rgb(250, 248, 245);
     line-height: 0.6;
-    height: px;
-    padding: 0.5em 0.2em;
+    
+    padding: 0.5em 1em;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(54, 216, 54);
+    color: rgb(255, 255, 255);
+    padding: 1em 2em 1em 1em;
+    width: 150px;
+
+}
+.main {
+    grid-area: main;
+    background-color: rgb(240, 238, 235);
+    padding: 1em;
+    height: 90vh;
+    width: 90vw;
 }
